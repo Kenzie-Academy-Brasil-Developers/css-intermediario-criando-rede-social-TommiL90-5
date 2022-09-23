@@ -1,0 +1,27 @@
+.w-full {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw; /* v = viewport -> tela de visualização */
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-container {
+  width: 25%;
+}
+
+.h-container {
+  height: 500px;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}

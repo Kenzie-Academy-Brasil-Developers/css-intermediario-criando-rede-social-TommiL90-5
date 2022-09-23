@@ -14,13 +14,27 @@
   font-weight: var(--font-weight-3);
   line-height: var(--line-height-2);
 }
-.text-1 {
+.text-2 {
   font-size: var(--font-text-2);
   font-weight: var(--font-weight-3);
-  line-height: var(--line-height-4);
+  line-height: var(--line-height-2);
+  
 }
-.text-1 {
+.text-3 {
   font-size: var(--font-text-1);
   font-weight: var(--font-weight-3);
   line-height: var(--line-height-4);
+}
+
+.color-text-1{
+
+}
+.color-text-1{
+  
+}
+.color-text-1{
+  
+}
+.color-text-1{
+  
 }

@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="/styles/resets.css" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
     <link rel="stylesheet" href="/styles/color.css" />
+    <link rel="stylesheet" href="/styles/sizes.css">
     <link rel="stylesheet" href="/styles/positioning.css" />
     <link rel="stylesheet" href="/styles/text.css" />
     <link rel="stylesheet" href="/styles/spacing.css" />
     <link rel="stylesheet" href="/styles/inputs.css" />
     <link rel="stylesheet" href="/styles/navbar.css" />
     <link rel="stylesheet" href="/styles/posts.css" />
+    <link rel="stylesheet" href="/styles/cards.css" />
     <link rel="stylesheet" href="/styles/modal.css" />
+    <link rel="stylesheet" href="/styles/modalHomePage.css" />
+    <link rel="stylesheet" href="/styles/buttons.css" />
     <link rel="stylesheet" href="style.css" />
     <title>TechPosters - Home</title>
   </head>
@@ -26,56 +30,99 @@
       </div>
     </header>
 <div class="container flex justify-between">
-  <main>
-    <section class="post">
+  <main class="flex flex-col gap-2">
+    <section class="form flex flex-col items-start gap-1 relative">
       <div class="user-card">
         <img src="../../assets/img/user1.svg" width="52px" alt="">
         <div class="info">
-          <h3>user1</h3>
+          <h3 class="title-2">user1</h3>
           <p>description</p>
         </div>
-        <form action="">
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <button>Postar</button>
+        </div>
+        <form class="form flex flex-col items-start gap-1" action="">
+          <input type="text" class="input-primary">
+          <textarea name="" id="" cols="30" rows="10" class="textarea-primary"></textarea>
+          <button class="absolute-bottom button-default button__primary" >Postar</button>
         </form>
-      </div>
+      
     </section>
-    <section class="articles">
-      <h1>Post</h1>
-      <article class="box-article">
+    <section class="flex flex-col gap-1">
+      <h2 class="title-1">Post</h2>
+      <!--1-->
+      <article class="flex flex-col items-start justify-between gap-1 box-article">
         <div class="user-card">
           <img src="../../assets/img/user1.svg" width="52px" alt="">
           <div class="info">
-            <h3>user1</h3>
+            <h3 class="title-2">user1</h3>
             <p>description</p>
           </div>
-          <section class="article">
-            <h2>titulo post</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam eligendi maxime quia architecto dolore explicabo. Ipsum minus et minima, itaque suscipit laborum officiis vitae obcaecati eos. Nobis, ducimus dicta.</p>
+        </div>
+            <section class="flex flex-col gap">
+            <h2 class="title-1">titulo post</h2>
+            <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam eligendi maxime quia architecto dolore explicabo. Ipsum minus et minima, itaque suscipit laborum officiis vitae obcaecati eos. Nobis, ducimus dicta.</p>
           </section>
-          <section class="buttons">
-            <button>Abrir post</button>
-            <button>❤</button>
-            <p>0</p>
+          <section class=" flex gap buttons">
+            <button class="button-default button__grey-0" data-control-modal="1">Abrir post</button>
+            <div class="flex">
+              <button class="like-button">❤</button>
+               <p>0</p>
+            </div>
           </section>  
       </article>
+      <!--2-->
+      
     </section>
    </main>
-   <aside>
+
+   <!--ASIDE-->
+   <aside class="sticky flex flex-col gap-2">
     <h3>Sugestões para você seguir</h3>
-    <ul>
+    <ul class=" flex flex-col gap-2">
+      <!--1-->
       <li class="user-card-2"> 
         <div>
           <img src="../../assets/img/user1.svg" width="52px" alt="">
           <div class="info">
-          <h3>user1</h3>
-          <p>description</p>
+          <h3 class="title-2">user1</class>
+          <p class="text-2 ">description</p>
+          </div>
         </div>
-        <button>Seguir</button>
+        <button class="btn-follow button-default">Seguir</button>
+      </li>
+      <!--2-->
+      <li class="user-card-2"> 
+        <div>
+          <img src="../../assets/img/user1.svg" width="52px" alt="">
+          <div class="info">
+          <h3 class="title-2">user1</h3>
+          <p>description</p>
+          </div>
+        </div>
+        <button class="btn-follow button-default">Seguir</button>
+      </li>
+      <!--3-->
+      <li class="user-card-2"> 
+        <div>
+          <img src="../../assets/img/user1.svg" width="52px" alt="">
+          <div class="info">
+          <h3 class="title-2">user1</h3>
+          <p>description</p>
+          </div>
+        </div>
+        <button class="btn-follow button-default">Seguir</button>
       </li>
     </ul>
    </aside>
+</div>
+<!--MODAL-->
+<!--1-->
+<div class="modal-wrapper-homepage" id="show-post">
+  <div class="modal-homepage">
+  
+
+  </div>
+</div>
+
 </div>
   </body>
   <script src="/script/visualComponents/modal.js"></script>

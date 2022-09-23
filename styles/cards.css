@@ -117,4 +117,32 @@
     text-transform: capitalize;
   
   }
+
+
+
+  /*Cards Users*/
+
+ .user-card{
+ 
+    height: 52px;
+    width: 190px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 12px;
+}
   
+.user-card-2{
+
+  height: 52px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-card-2 > div{
+
+  height: 52px;
+  width: 50%;
+  gap: 12px;
+  display: flex;
+}
