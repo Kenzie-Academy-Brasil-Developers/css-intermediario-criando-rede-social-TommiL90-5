@@ -1,0 +1,78 @@
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 703px;
+    height: 343px;
+    gap: 1.5rem;
+    border-radius: 4px;
+    background-color: transparent;
+}
+
+.posts-container > div{
+    display: flex;
+    gap: 12px;
+    height: 52px;
+    width: 190px;
+}
+.posts-container > div > img{
+    height: 52px;
+    width: 52px;
+    border-radius: 100%;
+}
+.posts-container > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 52px;
+    padding: 4px;
+    gap: 15px;
+}
+.posts-container > div > div > h3{
+  
+}
+.posts-container > div > div > p{
+    
+}
+
+.posts-container .text-tarea-1{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px 20px;
+width: 713px;
+height: 52px;
+background: #FFFFFF;
+border: 2px solid #DEE2E6;
+border-radius: 4px;
+
+}
+
+.posts-container .text-tarea-2{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 16px 20px;
+width: 713px;
+height: 308px;
+background: #FFFFFF;
+border: 2px solid #DEE2E6;
+border-radius: 4px;
+
+}
+.posts-container > button{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px 12px;
+gap: 10px;
+width: 69px;
+height: 38px;
+background: #4263EB;
+border: 2px solid #4263EB;
+border-radius: 4px;
+
+}
+

@@ -4,14 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/resets.css" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/color.css" />
+    <link rel="stylesheet" href="/styles/positioning.css" />
+    <link rel="stylesheet" href="/styles/text.css" />
+    <link rel="stylesheet" href="/styles/spacing.css" />
+    <link rel="stylesheet" href="/styles/inputs.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/cards.css" />
+    <link rel="stylesheet" href="/styles/posts.css" />
+    <link rel="stylesheet" href="/styles/modal.css" />
     <link rel="stylesheet" href="style.css" />
     <title>TechPosters - Login</title>
   </head>
   <body>
-    <main>
-      <form></form>
+    <header class="navbar navbar-items">
+      <h1 class="title-1">TechPosters</h1>
+      <div class="navbar-links">
+        <button class="navbar-link">Login</button>
+        <button class="navbar-link">Resgistro</button>
+      </div>
+    </header>
+    <main class="bg-color-grey-5">
+      <form class="form-container">
+        <h1>Login</h1>
+        <input type="email" placeholder="Seu e-mail">
+        <input type="password" placeholder="Sua senha">
+        <button data-control-modal="alert">Logar</button>
+        <p>Ainda não possui cadastro?</p>
+        <button>ir para página de registro</button>
+      </form>
     </main>
+
+    <!--MODAL-->
+    <div class="modal-wrapper" id="alert">
+      <div class="modal">
+       <div class="modal-header">
+           <h3 class="title-3">Acesso não autorizado</h3>
+       </div>
+       <form class="modal-body">
+           <p class="text-2">Essa conta não existe, logo não pode acessar a página dos posts</p>
+           <button class="button-primary" data-control-modal="alert">entendi</button>
+       </form>
+      </div>
+   </div>
   </body>
   <script src="/script/visualComponents/modal.js"></script>
   <script src="/script/visualComponents/navbar.js"></script>

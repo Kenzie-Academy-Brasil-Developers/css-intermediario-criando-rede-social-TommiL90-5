@@ -1,0 +1,41 @@
+.button {
+    padding: 4px 24px;
+    border-radius: var(--border-radius);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    font-weight: 600;
+    color: var(--white);
+  }
+  
+  .button__purple {
+    background-color: var(--purple);
+    border: 1px solid var(--purple);
+  }
+  
+  .button__green {
+    background-color: var(--green);
+    border: 1px solid var(--green);
+  }
+  
+  .button__red {
+    background-color: var(--white);
+    border: 1px solid var(--red);
+    color: var(--red);
+  }
+  
+  .button_modal {
+    width: 260px;
+  }
+  
+  .button_close_modal {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    margin: 9px;
+    cursor: pointer;
+  }

@@ -4,16 +4,81 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/resets.css" />
     <link rel="stylesheet" href="/styles/globalStyles.css" />
+    <link rel="stylesheet" href="/styles/color.css" />
+    <link rel="stylesheet" href="/styles/positioning.css" />
+    <link rel="stylesheet" href="/styles/text.css" />
+    <link rel="stylesheet" href="/styles/spacing.css" />
+    <link rel="stylesheet" href="/styles/inputs.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/posts.css" />
+    <link rel="stylesheet" href="/styles/modal.css" />
     <link rel="stylesheet" href="style.css" />
     <title>TechPosters - Home</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="navbar navbar-items">
+      <h1 class="title-1">TechPosters</h1>
+      <div class="navbar-links">
+        <button class="navbar-link">Login</button>
+        <button class="navbar-link">Resgistro</button>
+      </div>
+    </header>
+<div class="container flex justify-between">
+  <main>
+    <section class="post">
+      <div class="user-card">
+        <img src="../../assets/img/user1.svg" width="52px" alt="">
+        <div class="info">
+          <h3>user1</h3>
+          <p>description</p>
+        </div>
+        <form action="">
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <button>Postar</button>
+        </form>
+      </div>
+    </section>
+    <section class="articles">
+      <h1>Post</h1>
+      <article class="box-article">
+        <div class="user-card">
+          <img src="../../assets/img/user1.svg" width="52px" alt="">
+          <div class="info">
+            <h3>user1</h3>
+            <p>description</p>
+          </div>
+          <section class="article">
+            <h2>titulo post</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam eligendi maxime quia architecto dolore explicabo. Ipsum minus et minima, itaque suscipit laborum officiis vitae obcaecati eos. Nobis, ducimus dicta.</p>
+          </section>
+          <section class="buttons">
+            <button>Abrir post</button>
+            <button>❤</button>
+            <p>0</p>
+          </section>  
+      </article>
+    </section>
+   </main>
+   <aside>
+    <h3>Sugestões para você seguir</h3>
+    <ul>
+      <li class="user-card-2"> 
+        <div>
+          <img src="../../assets/img/user1.svg" width="52px" alt="">
+          <div class="info">
+          <h3>user1</h3>
+          <p>description</p>
+        </div>
+        <button>Seguir</button>
+      </li>
+    </ul>
+   </aside>
+</div>
   </body>
-  <script src="/script/database/users.js"></script>
-  <script src="/script/database/posts.js"></script>
-  <script src="/script/database/sugestUsers.js"></script>
+  <script src="/script/visualComponents/modal.js"></script>
+  <script src="/script/visualComponents/navbar.js"></script>
   <script src="index.js"></script>
 </html>

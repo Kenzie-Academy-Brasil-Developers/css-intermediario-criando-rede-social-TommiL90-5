@@ -1,0 +1,120 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 461px;
+  height: 426;
+  padding: 2.5rem 1.5rem;
+  gap: 1.875rem;
+  border-radius: 8px;
+  background-color: var(--color-white);
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+}
+
+.form-container > h1 {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  width: 100%;
+  height: 40px;
+  color: var(--color-grey-0);
+}
+
+.form-container > input {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  height: 52px;
+  padding: 1rem 1.25rem;
+  border-radius: 4px;
+  border: 2px solid var(--color-grey-4);
+}
+
+.form-container > input:hover {
+  border: 2px solid var(--color-primary);
+}
+
+.form-container > input::placeholder {
+  color: var(--color-grey-2);
+  font-size: var(--font-text-1);
+  font-weight: var(--font-weight-3);
+}
+
+.form-container > p {
+  display: flex;
+  align-items: center;
+  text-align: start;
+  width: 100%;
+  height: 16px;
+  color: var(--color-grey-0);
+  font-size: var(--font-text-1);
+  font-weight: var(--font-weight-3);
+}
+
+.form-container > button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.75px;
+  gap: 0.625rem;
+  width: 100%;
+  height: 38px;
+  border-radius: 4px;
+  color: var(--color-grey-0);
+  background-color: transparent;
+  font-size: var(--font-text-2);
+  font-weight: var(--font-weight-1);
+  text-transform: capitalize;
+
+}
+
+.form-container > p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 16px;
+  font-size: var(--font-text-1);
+  font-weight: var(--font-weight-3);
+  color: var(--color-grey-0);
+  background-color: transparent;
+  
+}
+
+
+  .form-container > div {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .form-container > div > h1 {
+    display: flex;
+    align-items: center;
+    text-align: start;
+    width: 100%;
+    height: 40px;
+    color: var(--color-grey-0);
+  }
+
+  .form > div > button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
+    width: 65px;
+    height: 28px;
+    border-radius: 4px;
+    color: var(--color-grey-0);
+    font-size: var(--font-text);
+    font-weight: var(--font-weight-1);
+    text-transform: capitalize;
+  
+  }
+  
