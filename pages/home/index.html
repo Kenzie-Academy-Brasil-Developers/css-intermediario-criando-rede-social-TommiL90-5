@@ -29,8 +29,8 @@
         <button class="navbar-link">Resgistro</button>
       </div>
     </header>
-<div class="container flex justify-between">
-  <main class="flex flex-col gap-2">
+<div class="container flex justify-between container-responsive">
+  <main class="flex flex-col gap-2 content-container-responsive">
     <section class="form flex flex-col items-start gap-1 relative">
       <div class="user-card">
         <img src="../../assets/img/user1.svg" width="52px" alt="">
@@ -40,8 +40,8 @@
         </div>
         </div>
         <form class="form flex flex-col items-start gap-1" action="">
-          <input type="text" class="input-primary">
-          <textarea name="" id="" cols="30" rows="10" class="textarea-primary"></textarea>
+          <input type="text" class="input-primary" placeholder="Digitar título do post" required="true">
+          <textarea name="" id="" cols="30" rows="10" class="textarea-primary" placeholder="Digitar descrição do post" required="true"></textarea>
           <button class="absolute-bottom button-default button__primary" >Postar</button>
         </form>
       
@@ -70,12 +70,74 @@
           </section>  
       </article>
       <!--2-->
+      <article class="flex flex-col items-start justify-between gap-1 box-article">
+        <div class="user-card">
+          <img src="../../assets/img/user1.svg" width="52px" alt="">
+          <div class="info">
+            <h3 class="title-2">user1</h3>
+            <p>description</p>
+          </div>
+        </div>
+            <section class="flex flex-col gap">
+            <h2 class="title-1">titulo post</h2>
+            <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam eligendi maxime quia architecto dolore explicabo. Ipsum minus et minima, itaque suscipit laborum officiis vitae obcaecati eos. Nobis, ducimus dicta.</p>
+          </section>
+          <section class=" flex gap buttons">
+            <button class="button-default button__grey-0" data-control-modal="1">Abrir post</button>
+            <div class="flex">
+              <button class="like-button">❤</button>
+               <p>0</p>
+            </div>
+          </section>  
+      </article>
+      <!--3-->
+      <article class="flex flex-col items-start justify-between gap-1 box-article">
+        <div class="user-card">
+          <img src="../../assets/img/user1.svg" width="52px" alt="">
+          <div class="info">
+            <h3 class="title-2">user1</h3>
+            <p>description</p>
+          </div>
+        </div>
+            <section class="flex flex-col gap">
+            <h2 class="title-1">titulo post</h2>
+            <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam eligendi maxime quia architecto dolore explicabo. Ipsum minus et minima, itaque suscipit laborum officiis vitae obcaecati eos. Nobis, ducimus dicta.</p>
+          </section>
+          <section class=" flex gap buttons">
+            <button class="button-default button__grey-0" data-control-modal="1">Abrir post</button>
+            <div class="flex">
+              <button class="like-button">❤</button>
+               <p>0</p>
+            </div>
+          </section>  
+      </article>
+      <!--4-->
+      <article class="flex flex-col items-start justify-between gap-1 box-article">
+        <div class="user-card">
+          <img src="../../assets/img/user1.svg" width="52px" alt="">
+          <div class="info">
+            <h3 class="title-2">user1</h3>
+            <p>description</p>
+          </div>
+        </div>
+            <section class="flex flex-col gap">
+            <h2 class="title-1">titulo post</h2>
+            <p class="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam eligendi maxime quia architecto dolore explicabo. Ipsum minus et minima, itaque suscipit laborum officiis vitae obcaecati eos. Nobis, ducimus dicta.</p>
+          </section>
+          <section class=" flex gap buttons">
+            <button class="button-default button__grey-0" data-control-modal="1">Abrir post</button>
+            <div class="flex">
+              <button class="like-button">❤</button>
+               <p>0</p>
+            </div>
+          </section>  
+      </article>
       
     </section>
    </main>
 
    <!--ASIDE-->
-   <aside class="sticky flex flex-col gap-2">
+   <aside class="sticky flex flex-col gap-2 content-container-responsive">
     <h3>Sugestões para você seguir</h3>
     <ul class=" flex flex-col gap-2">
       <!--1-->
@@ -117,7 +179,7 @@
 <!--MODAL-->
 <!--1-->
 <div class="modal-wrapper-homepage" id="show-post">
-  <div class="modal-homepage">
+  <div class="modal-homepage modal-mobile">
   
 
   </div>

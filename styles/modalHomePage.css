@@ -19,7 +19,6 @@
     align-items: flex-start;
     padding: 40px 24px;
     gap: 32px;
-    isolation: isolate;
     width: 761px;
     height: 544px;
     color: black;
@@ -68,5 +67,22 @@
     100% {
       transform: translateX(0);
       opacity: 1;
+    }
+  }
+
+  
+  @media (max-width: 700px) {
+  
+    .modal-mobile {
+      background-color: #FFFFFF;
+      position: absolute;
+      top: 7rem;
+      left: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      padding: 0.75rem;
+      gap: 20px;
+      width: 95%;
+      height: max-content;  
     }
   }
